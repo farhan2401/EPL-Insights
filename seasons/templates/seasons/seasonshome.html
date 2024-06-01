@@ -4,6 +4,11 @@
 <html>
     <body>
         <h3> Seasons </h3>
+            <ul>
+            {% for season in ls.season_set.all %}
+                <li>{{season.text}}</li>
+            {% endfor %}
+            </ul>
     </body>
 </html>
 {% endblock %}
