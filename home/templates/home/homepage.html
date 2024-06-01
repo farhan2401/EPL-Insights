@@ -30,12 +30,18 @@
                 text-align: center;
                 padding-top: 250px;
                 padding-bottom: 100px;
+                animation: fadeIn 5s;
             }
             .btns {
                 justify-content: center;
                 display: flex;
                 gap: 25px;
                 list-style: none;
+                animation: fadeIn 10s;
+            }
+            @keyframes fadeIn {
+                0% { opacity: 0; }
+                100% { opacity: 1; }
             }
             .button-64 {
                 align-items: center;
