@@ -1,4 +1,4 @@
-# File that cleans the data to remove the numbered column from the csv file
+# File that cleans the csv files
 from datetime import datetime
 import pandas as pd
 
