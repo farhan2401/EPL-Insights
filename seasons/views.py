@@ -1,7 +1,11 @@
 from django.shortcuts import render
-from sqlite3 import *
+from django.http import HttpResponse
+from home.models import seasonsTbl
 
 # Create your views here.
 def seasons(request):
-    ls = matches.objects.get(id=id)
+    ls = seasonsTbl.objects.all()
     return render(request, 'seasons/seasonshome.html', {"ls":ls})
+
+def seasonpage(request):
+    return render(request, 'seasons/seasonpage.html', {})
