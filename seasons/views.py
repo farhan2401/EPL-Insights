@@ -7,5 +7,5 @@ def seasons(request):
     ls = seasonsTbl.objects.all()
     return render(request, 'seasons/seasonshome.html', {"ls":ls})
 
-def seasonpage(request):
+def seasonview(request):
     return render(request, 'seasons/seasonpage.html', {})

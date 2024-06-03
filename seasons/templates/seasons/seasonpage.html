@@ -1,4 +1,59 @@
-{% extends 'home/base.html' %}
+{% extends 'home/navbar.html' %}
 
 {% block content %}
+<html>
+    <head>
+        <title>Season Page View</title>
+        <style>
+            body {
+                background: linear-gradient(
+                90deg,
+                hsl(0deg 0% 0%) 0%,
+                hsl(233deg 64% 6%) 7%,
+                hsl(231deg 38% 9%) 13%,
+                hsl(229deg 31% 11%) 20%,
+                hsl(229deg 28% 13%) 27%,
+                hsl(229deg 33% 14%) 33%,
+                hsl(230deg 36% 16%) 40%,
+                hsl(230deg 39% 18%) 47%,
+                hsl(230deg 41% 19%) 53%,
+                hsl(230deg 45% 20%) 60%,
+                hsl(230deg 48% 21%) 67%,
+                hsl(230deg 52% 21%) 73%,
+                hsl(230deg 58% 22%) 80%,
+                hsl(230deg 66% 22%) 87%,
+                hsl(230deg 73% 23%) 93%,
+                hsl(230deg 80% 24%) 100%
+                );
+            }
+            .mainheader {
+                color: white;
+                text-align: center;
+                font-size: 60px;
+                font-weight: 800;
+                padding-top: 50px;
+                padding-bottom: 25px;
+                animation: fadeIn 5s;
+            }
+            .subheader {
+                color: white;
+                text-align: center;
+                font-size: 40px;
+                font-weight: 600;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                animation: fadeIn 5s;
+            }
+            @keyframes fadeIn {
+                0% { opacity: 0; }
+                100% { opacity: 1; }
+            }
+        </style>
+    </head>
+    <body>
+        <h3 class="mainheader">Season Page</h3>
+        <h3 class="subheader">Season Stats</h3>
+        <h3 class="subheader">All Matches</h3>
+    </body>
+</html>
 {% endblock %}
