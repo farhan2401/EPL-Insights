@@ -3,5 +3,5 @@ from seasons import views
     
 urlpatterns = [
     path("", views.seasons, name="seasons"),
-    path("seasonview/", views.seasonview, name="seasonview")
+    path("<str:usrseason>/", views.seasonview, name="seasonview")
 ]
