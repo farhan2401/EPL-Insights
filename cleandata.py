@@ -11,6 +11,7 @@ def cleanStats():
 # Import matches
 def cleanMatches():
     matches = pd.read_csv('data/matches.csv')
+    matches = matches[matches.Home is not None]
     matches = matches.drop(columns="Unnamed: 0", axis = 1, inplace = False)
     return matches
                 
@@ -23,13 +24,13 @@ def cleanTeams():
             
 if __name__ == '__main__':
    # teams = cleanTeams()
-   # matches = cleanMatches()
-    stats = cleanStats()
+    matches = cleanMatches()
+    #stats = cleanStats()
     
    # print(teams.info())
-   # print(matches.info())
-    print(stats.info())
+    print(matches.info())
+    #print(stats.info())
     
    # teams.to_csv('data/teams.csv')
-   # matches.to_csv('data/matches.csv')
-    stats.to_csv('data/seasonstats.csv')
+    matches.to_csv('data/matches.csv')
+    #stats.to_csv('data/seasonstats.csv')

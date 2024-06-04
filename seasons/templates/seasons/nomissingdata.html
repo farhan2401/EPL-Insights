@@ -1,0 +1,51 @@
+{% extends 'seasons/seasonpage.html' %}
+
+{% block tblheader %}
+<th>Squad</th>
+<th>Wins</th>
+<th>Draws</th>
+<th>Losses</th>
+<th>Points</th>
+<th>GF</th>
+<th>GA</th>
+<th>Shots</th>
+<th>SoT</th>
+<th>FK Shots</th>
+<th>PK Goals</th>
+<th>Pass Att</th>
+<th>Pass Cmp</th>
+<th>Pass %</th>
+<th>Corners</th>
+<th>Yellow Cards</th>
+<th>Red Cards</th>
+<th>Fouls</th>
+<th>PK Con</th>
+<th>Own Goals</th>
+{% endblock %}
+
+{% block tblcontent %}
+{% for stat in stats %}
+<tr>
+    <td data-title="Squad" style="padding:10px 0;">{{stat.squad}}</td>
+    <td data-title="Wins">{{stat.wins}}</td>
+    <td data-title="Draws">{{stat.draws}}</td>
+    <td data-title="Losses">{{stat.losses}}</td>
+    <td data-title="Points">{{stat.points}}</td>
+    <td data-title="Goals For">{{stat.goalsFor}}</td>
+    <td data-title="Goals Against">{{stat.goalsAgainst}}</td>
+    <td data-title="Shots">{{stat.shots}}</td>
+    <td data-title="Shots On Target">{{stat.shotsOT}}</td>
+    <td data-title="FK Shots">{{stat.FKShots}}</td>
+    <td data-title="PK Goals">{{stat.PKGoals}}</td>
+    <td data-title="Pass Att">{{stat.att}}</td>
+    <td data-title="Pass Cmp">{{stat.cmp}}</td>
+    <td data-title="Pass %">{{stat.cmpPerc}}</td>
+    <td data-title="Corners">{{stat.corners}}</td>
+    <td data-title="Yellow Cards">{{stat.crdY}}</td>
+    <td data-title="Red Cards">{{stat.crdR}}</td>
+    <td data-title="Fouls">{{stat.fouls}}</td>
+    <td data-title="PK Conceded">{{stat.PKCon}}</td>
+    <td data-title="Own Goals">{{stat.ownGoals}}</td>
+</tr>
+{% endfor %}
+{% endblock %}
