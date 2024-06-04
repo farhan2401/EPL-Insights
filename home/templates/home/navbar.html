@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
@@ -6,32 +7,7 @@
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <style>
-            .navbar {
-                background: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
-                color: white;
-                display: flex;
-                justify-content: space-between;
-            }
-            .navimg {
-                width: 75px;
-                height: auto;
-            }
-            .navheader {
-                margin-left: 5px;
-                margin-right: 25px;
-            }
-            .navitems {
-                display: flex;
-                gap: 47px;
-                list-style: none;
-            }   
-            .navitems a {
-                font-size: 20px;
-                color: white;
-                text-decoration: none;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href={% static 'css/navbar.css' %}>
     </head>
     <body>
         <div class="navbar">

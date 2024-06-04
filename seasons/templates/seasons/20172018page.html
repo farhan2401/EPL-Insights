@@ -1,6 +1,6 @@
 {% extends 'seasons/seasonpage.html' %}
 
-{% block tblheader %}
+{% block statstblheader %}
 <th>Squad</th>
 <th>Wins</th>
 <th>Draws</th>
@@ -22,7 +22,7 @@
 <th>Own Goals</th>
 {% endblock %}
 
-{% block tblcontent %}
+{% block statstblcontent %}
 {% for stat in stats %}
 <tr>
     <td data-title="Squad" class="squadtd">{{stat.squad}}</td>
