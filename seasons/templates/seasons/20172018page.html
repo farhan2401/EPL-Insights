@@ -25,13 +25,13 @@
 {% block tblcontent %}
 {% for stat in stats %}
 <tr>
-    <td data-title="Squad" style="padding:10px 0;">{{stat.squad}}</td>
+    <td data-title="Squad" class="squadtd">{{stat.squad}}</td>
     <td data-title="Wins">{{stat.wins}}</td>
     <td data-title="Draws">{{stat.draws}}</td>
     <td data-title="Losses">{{stat.losses}}</td>
     <td data-title="Points">{{stat.points}}</td>
-    <td data-title="Goals For">{{stat.goalsFor}}</td>
-    <td data-title="Goals Against">{{stat.goalsAgainst}}</td>
+    <td data-title="GF">{{stat.goalsFor}}</td>
+    <td data-title="GA">{{stat.goalsAgainst}}</td>
     <td data-title="Shots">{{stat.shots}}</td>
     <td data-title="Shots On Target">{{stat.shotsOT}}</td>
     <td data-title="FK Shots">{{stat.FKShots}}</td>
