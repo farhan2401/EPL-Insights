@@ -26,7 +26,7 @@
 {% block statstblcontent %}
 {% for stat in stats %}
 <tr>
-    <td data-title="Squad"class="squadtd">{{stat.squad}}</td>
+    <td data-title="Squad">{{stat.squad}}</td>
     <td data-title="Wins">{{stat.wins}}</td>
     <td data-title="Draws">{{stat.draws}}</td>
     <td data-title="Losses">{{stat.losses}}</td>
@@ -46,6 +46,34 @@
     <td data-title="Fouls">{{stat.fouls}}</td>
     <td data-title="PK Conceded">{{stat.PKCon}}</td>
     <td data-title="Own Goals">{{stat.ownGoals}}</td>
+</tr>
+{% endfor %}
+{% endblock %}
+
+{% block matchestblheader%}
+<th>Date</th>
+<th>Home</th>
+<th>Home xG</th>
+<th>Home Goals</th>
+<th>Away Goals</th>
+<th>Away xG</th>
+<th>Away</th>
+<th>Attendance</th>
+<th>Venue</th>
+{% endblock %}
+
+{% block matchestblcontent %}
+{% for match in matches %}
+<tr>
+    <td data-title="Date">{{match.date}}</td>
+    <td data-title="Home">{{match.home}}</td>
+    <td data-title="Home xG">{{match.homeXG}}</td>
+    <td data-title="Home Goals">{{match.homeGoals}}</td>
+    <td data-title="Away Goals">{{match.awayGoals}}</td>
+    <td data-title="Away xG">{{match.awayXG}}</td>
+    <td data-title="Away">{{match.away}}</td>
+    <td data-title="Attendance">{{match.attendance}}</td>
+    <td data-title="Venue">{{match.venue}}</td>
 </tr>
 {% endfor %}
 {% endblock %}

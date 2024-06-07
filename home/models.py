@@ -4,6 +4,9 @@ from django.db import models
 class seasonsTbl(models.Model):
     season = models.CharField(max_length=9, db_column="season")
     
+class teamsTbl(models.Model):
+    squad = models.CharField(max_length=20, db_column="squad")
+    
 class statsTbl(models.Model):
     season = models.CharField(max_length=9, db_column="season")
     squad = models.CharField(max_length=20, db_column="squad")
@@ -26,3 +29,15 @@ class statsTbl(models.Model):
     fouls = models.DecimalField(max_digits=5, decimal_places=1, db_column="fouls")
     PKCon = models.DecimalField(max_digits=3, decimal_places=1, db_column="PKCon")
     ownGoals = models.DecimalField(max_digits=3, decimal_places=1, db_column="ownGoals")  
+    
+class matchesTbl(models.Model):
+    season = models.CharField(max_length=9, db_column="season")
+    date = models.DateField(db_column="date")
+    home = models.CharField(max_length=20, db_column="home")
+    homeXG = models.DecimalField(max_digits=3, decimal_places=1, db_column="homeXG")
+    homeGoals = models.IntegerField(db_column="homeGoals")
+    awayGoals = models.IntegerField(db_column="awayGoals")
+    awayXG = models.DecimalField(max_digits=3, decimal_places=1)
+    away =  models.CharField(max_length=20, db_column="away")
+    attendance = models.IntegerField(db_column="attendance")
+    venue = models.CharField(max_length=40, db_column="venue")

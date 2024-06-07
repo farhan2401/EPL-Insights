@@ -1,0 +1,105 @@
+{% extends 'home/navbar.html' %}
+{% block content %}
+<html>
+    <head>
+        <title>Season Home Page</title>
+        <style>
+            body {
+                background: linear-gradient(
+                90deg,
+                hsl(0deg 0% 0%) 0%,
+                hsl(233deg 64% 6%) 7%,
+                hsl(231deg 38% 9%) 13%,
+                hsl(229deg 31% 11%) 20%,
+                hsl(229deg 28% 13%) 27%,
+                hsl(229deg 33% 14%) 33%,
+                hsl(230deg 36% 16%) 40%,
+                hsl(230deg 39% 18%) 47%,
+                hsl(230deg 41% 19%) 53%,
+                hsl(230deg 45% 20%) 60%,
+                hsl(230deg 48% 21%) 67%,
+                hsl(230deg 52% 21%) 73%,
+                hsl(230deg 58% 22%) 80%,
+                hsl(230deg 66% 22%) 87%,
+                hsl(230deg 73% 23%) 93%,
+                hsl(230deg 80% 24%) 100%
+                );
+            }
+            .teamsheader {
+                color: white;
+                text-align: center;
+                font-size: 75px;
+                font-weight: 800;
+                padding-top: 50px;
+                padding-bottom: 25px;
+                animation: fadeIn 5s;
+            }
+            .teams {
+                color: white;
+                justify-content: space-between;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                list-style: none;
+                animation: fadeIn 5s
+            }
+            @keyframes fadeIn {
+                0% { opacity: 0; }
+                100% { opacity: 1; }
+            }
+            .seasonbtn {
+                padding: 15px 25px;
+                border: unset;
+                border-radius: 15px;
+                color: #212121;
+                z-index: 1;
+                background: #e8e8e8;
+                position: relative;
+                font-weight: 1000;
+                font-size: 17px;
+                -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+                box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+                transition: all 250ms;
+                overflow: hidden;
+                width: 200px;
+            }
+            .seasonbtn::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 0;
+                border-radius: 15px;
+                background-color: #212121;
+                z-index: -1;
+                -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+                box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+                transition: all 250ms
+            }  
+            .seasonbtn:hover {
+                color: #e8e8e8;
+            }  
+            .seasonbtn:hover::before {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <h3 class="teamsheader"> teams </h3>
+        <ul class="teams">
+        {% for team in teams %}
+            <li>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://resources.premierleague.com/premierleague/badges/20/t3.png" class="card-img-top" alt="logo">
+                    <div class="card-body">
+                        <h5 class="card-title">{{team.squad}}</h5>
+                        <a href=# class="btn btn-dark">See Stats and Matches</a>
+                    </div>
+                </div>
+            </li>
+        {% endfor %}
+        </ul>
+    </body>
+</html>
+{% endblock %}
