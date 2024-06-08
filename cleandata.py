@@ -11,7 +11,11 @@ def cleanStats():
 # Import matches
 def cleanMatches():
     matches = pd.read_csv('data/matches.csv')
-    matches = matches[matches.Home is not None]
+    homeTeams = matches['Home']
+    vals = homeTeams.isnull()
+    for i in range(0, len(vals)):
+        if vals[i]:
+            matches = matches.drop(i)
     matches = matches.drop(columns="Unnamed: 0", axis = 1, inplace = False)
     return matches
                 

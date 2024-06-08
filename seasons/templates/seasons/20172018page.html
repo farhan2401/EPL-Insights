@@ -47,3 +47,31 @@
 </tr>
 {% endfor %}
 {% endblock %}
+
+{% block matchestblheader%}
+<th>Date</th>
+<th>Home</th>
+<th>Home xG</th>
+<th>Home Goals</th>
+<th>Away Goals</th>
+<th>Away xG</th>
+<th>Away</th>
+<th>Attendance</th>
+<th>Venue</th>
+{% endblock %}
+
+{% block matchestblcontent %}
+{% for match in matches %}
+<tr>
+    <td data-title="Date">{{match.date}}</td>
+    <td data-title="Home">{{match.home}}</td>
+    <td data-title="Home xG">{{match.homeXG}}</td>
+    <td data-title="Home Goals">{{match.homeGoals}}</td>
+    <td data-title="Away Goals">{{match.awayGoals}}</td>
+    <td data-title="Away xG">{{match.awayXG}}</td>
+    <td data-title="Away">{{match.away}}</td>
+    <td data-title="Attendance">{{match.attendance}}</td>
+    <td data-title="Venue">{{match.venue}}</td>
+</tr>
+{% endfor %}
+{% endblock %}

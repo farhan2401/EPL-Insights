@@ -10,8 +10,8 @@ def seasons(request):
 def seasonview(request, usrseason):
     stats = statsTbl.objects.all().filter(season=usrseason)
     matches = matchesTbl.objects.all().filter(season=usrseason)
-    context = {"stats": stats, "matches":matches}
-    if usrseason == '2017-2018':
+    context = {"stats": stats, "matches": matches}
+    if usrseason == "2017-2018":
         return render(request, 'seasons/20172018page.html', context)
     else:
-        return render(request, 'seasons/nomissingdata.html', {"stats":stats})
+        return render(request, 'seasons/nomissingdata.html', context)
