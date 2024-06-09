@@ -1,0 +1,36 @@
+{% extends 'seasons/seasonpage.html' %}
+
+{% block statstblheader %}
+{% endblock %}
+
+{% block statstblcontent %}
+{% for stat in stats %}
+<tr>
+    <td data-title="Squad">{{stat.squad}}</td>
+    <td data-title="Wins">{{stat.wins}}</td>
+    <td data-title="Draws">{{stat.draws}}</td>
+    <td data-title="Losses">{{stat.losses}}</td>
+    <td data-title="Points">{{stat.points}}</td>
+    <td data-title="GF">{{stat.goalsF}}</td>
+    <td data-title="GA">{{stat.goalsA}}</td>
+</tr>
+{% endfor %}
+{% endblock %}
+
+{% block matchestblheader%}
+<th>Date</th>
+<th>Home</th>
+<th>Score</th>
+<th>Away</th>
+{% endblock %}
+
+{% block matchestblcontent %}
+{% for match in matches %}
+<tr>
+    <td data-title="Date">{{match.date}}</td>
+    <td data-title="Home">{{match.home}}</td>
+    <td data-title="Score">{{match.homeGoals}}-{{match.awayGoals}}</td>
+    <td data-title="Away">{{match.away}}</td>
+</tr>
+{% endfor %}
+{% endblock %}

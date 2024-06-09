@@ -32,7 +32,7 @@ class statsTbl(models.Model):
     
 class matchesTbl(models.Model):
     season = models.CharField(max_length=9, db_column="season")
-    date = models.DateField(db_column="date")
+    date = models.CharField(max_length=15, db_column="date")
     home = models.CharField(max_length=20, db_column="home")
     homeXG = models.DecimalField(max_digits=3, decimal_places=1, db_column="homeXG")
     homeGoals = models.IntegerField(db_column="homeGoals")

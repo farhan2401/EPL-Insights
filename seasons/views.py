@@ -13,5 +13,9 @@ def seasonview(request, usrseason):
     context = {"stats": stats, "matches": matches}
     if usrseason == "2017-2018":
         return render(request, 'seasons/20172018page.html', context)
-    else:
+    elif int(usrseason[:4]) > 2017:
         return render(request, 'seasons/nomissingdata.html', context)
+    elif int(usrseason[:4]) < 2017 and int(usrseason[:4]) > 1991:
+        return render(request, 'seasons/2016-1992.html', context)
+    else:
+        return render(request, 'seasons/1991end.html', context)

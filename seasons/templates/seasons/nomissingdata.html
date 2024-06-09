@@ -1,26 +1,13 @@
 {% extends 'seasons/seasonpage.html' %}
 
 {% block statstblheader %}
-<th>Squad</th>
-<th>Wins</th>
-<th>Draws</th>
-<th>Losses</th>
-<th>Points</th>
-<th>GF</th>
-<th>GA</th>
 <th>Shots</th>
 <th>SoT</th>
-<th>FK Shots</th>
-<th>PK Goals</th>
 <th>Pass Att</th>
 <th>Pass Cmp</th>
 <th>Pass %</th>
-<th>Corners</th>
 <th>Yellow Cards</th>
 <th>Red Cards</th>
-<th>Fouls</th>
-<th>PK Con</th>
-<th>Own Goals</th>
 {% endblock %}
 
 {% block statstblcontent %}
@@ -31,21 +18,15 @@
     <td data-title="Draws">{{stat.draws}}</td>
     <td data-title="Losses">{{stat.losses}}</td>
     <td data-title="Points">{{stat.points}}</td>
-    <td data-title="GF">{{stat.goalsFor}}</td>
-    <td data-title="GA">{{stat.goalsAgainst}}</td>
+    <td data-title="GF">{{stat.goalsF}}</td>
+    <td data-title="GA">{{stat.goalsA}}</td>
     <td data-title="Shots">{{stat.shots}}</td>
     <td data-title="Shots On Target">{{stat.shotsOT}}</td>
-    <td data-title="FK Shots">{{stat.FKShots}}</td>
-    <td data-title="PK Goals">{{stat.PKGoals}}</td>
     <td data-title="Pass Att">{{stat.att}}</td>
     <td data-title="Pass Cmp">{{stat.cmp}}</td>
     <td data-title="Pass %">{{stat.cmpPerc}}</td>
-    <td data-title="Corners">{{stat.corners}}</td>
     <td data-title="Yellow Cards">{{stat.crdY}}</td>
     <td data-title="Red Cards">{{stat.crdR}}</td>
-    <td data-title="Fouls">{{stat.fouls}}</td>
-    <td data-title="PK Conceded">{{stat.PKCon}}</td>
-    <td data-title="Own Goals">{{stat.ownGoals}}</td>
 </tr>
 {% endfor %}
 {% endblock %}
@@ -54,8 +35,7 @@
 <th>Date</th>
 <th>Home</th>
 <th>Home xG</th>
-<th>Home Goals</th>
-<th>Away Goals</th>
+<th>Score</th>
 <th>Away xG</th>
 <th>Away</th>
 <th>Attendance</th>
@@ -68,8 +48,7 @@
     <td data-title="Date">{{match.date}}</td>
     <td data-title="Home">{{match.home}}</td>
     <td data-title="Home xG">{{match.homeXG}}</td>
-    <td data-title="Home Goals">{{match.homeGoals}}</td>
-    <td data-title="Away Goals">{{match.awayGoals}}</td>
+    <td data-title="Score">{{match.homeGoals}}-{{match.awayGoals}}</td>
     <td data-title="Away xG">{{match.awayXG}}</td>
     <td data-title="Away">{{match.away}}</td>
     <td data-title="Attendance">{{match.attendance}}</td>
