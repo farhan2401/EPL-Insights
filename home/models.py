@@ -5,7 +5,7 @@ class seasonsTbl(models.Model):
     season = models.CharField(max_length=9, db_column="season")
     
 class teamsTbl(models.Model):
-    squad = models.CharField(max_length=20, db_column="squade")
+    squad = models.CharField(max_length=20, db_column="squad")
     
 class statsTbl(models.Model):
     season = models.CharField(max_length=9, db_column="season")

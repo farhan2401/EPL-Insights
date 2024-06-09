@@ -1,8 +1,10 @@
 {% extends 'home/navbar.html' %}
+
 {% block content %}
+{% load static %}
 <html>
     <head>
-        <title>Season Home Page</title>
+        <title>Teams Home Page</title>
         <style>
             body {
                 background: linear-gradient(
@@ -47,13 +49,13 @@
                 0% { opacity: 0; }
                 100% { opacity: 1; }
             }
-            .seasonbtn {
+            .card {
                 padding: 15px 25px;
                 border: unset;
                 border-radius: 15px;
-                color: #212121;
+                color: #e8e8e8;
                 z-index: 1;
-                background: #e8e8e8;
+                background: #212121;
                 position: relative;
                 font-weight: 1000;
                 font-size: 17px;
@@ -62,8 +64,15 @@
                 transition: all 250ms;
                 overflow: hidden;
                 width: 200px;
+                a {
+                    color: #e8e8e8;
+                    text-decoration: none;
+                }
+                .card-title {
+                    color: #e8e8e8;
+                }
             }
-            .seasonbtn::before {
+            .card::before {
                 content: "";
                 position: absolute;
                 top: 0;
@@ -71,30 +80,32 @@
                 height: 100%;
                 width: 0;
                 border-radius: 15px;
-                background-color: #212121;
+                background-color: #e8e8e8;
                 z-index: -1;
                 -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
                 box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
                 transition: all 250ms
-            }  
-            .seasonbtn:hover {
-                color: #e8e8e8;
-            }  
-            .seasonbtn:hover::before {
+            }
+            .card::hover {
+                .card-title {
+                    color: #212121;
+                }
+            }
+            .card:hover::before {
                 width: 100%;
             }
         </style>
     </head>
     <body>
-        <h3 class="teamsheader"> teams </h3>
+        <h3 class="teamsheader">Teams</h3>
         <ul class="teams">
         {% for team in teams %}
             <li>
                 <div class="card" style="width: 18rem;">
-                    <img src="https://resources.premierleague.com/premierleague/badges/20/t3.png" class="card-img-top" alt="logo">
+                    <img src="{% static '/images/aresenal.png' %}" class="card-img-top" alt="{{team.squad}} logo">
                     <div class="card-body">
                         <h5 class="card-title">{{team.squad}}</h5>
-                        <a href=# class="btn btn-dark">See Stats and Matches</a>
+                        <a href=#>See Stats and Matches</a>
                     </div>
                 </div>
             </li>
