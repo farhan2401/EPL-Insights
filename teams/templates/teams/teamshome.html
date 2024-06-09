@@ -14,7 +14,7 @@
         {% for team in teams %}
             <li>
                 <div class="card" style="width: 18rem;">
-                    <img src="{% static "images/Arsenal.png" %}" class="card-img-top" alt="{{team.squad}} logo">
+                    <img src="/static/images/{{team.squad}}.png" class="card-img-top" alt="{{team.squad}} logo">
                     <div class="card-body">
                         <h5 class="card-title">{{team.squad}}</h5>
                         <a href=#>See Stats and Matches</a>

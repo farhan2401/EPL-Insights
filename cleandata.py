@@ -5,8 +5,11 @@ import pandas as pd
 # Import season stats
 def cleanStats():
     stats = pd.read_csv('data/seasonstats.csv')
-    stats = stats.drop(columns=['Unnamed: 0.2'], axis = 1, inplace=False)
-    stats = stats.drop(stats.columns[0], axis=1, inplace=False)
+    stats = stats.drop(columns=['Unnamed: 0'], axis = 1, inplace=False)
+    stats = stats.replace(to_replace=["Birmingham", "Small Heath"], value="Birmingham City")
+    stats = stats.replace(to_replace="Newton Heath", value="Manchester Utd")
+    stats = stats.replace(to_replace="Stoke", value="Stoke City")
+    stats = stats.replace(to_replace="The Wednesday", value="Sheffield Weds")
     return stats
 
 # Import matches
@@ -17,8 +20,11 @@ def cleanMatches():
     for i in range(0, len(vals)):
         if vals[i]:
             matches = matches.drop(i)
-    matches = matches.drop(columns=['Unnamed: 0.2'], axis = 1, inplace=False)
-    matches = matches.drop(matches.columns[0], axis=1, inplace=False)
+    matches = matches.drop(columns=['Unnamed: 0'], axis = 1, inplace=False)
+    matches = matches.replace(to_replace=["Birmingham", "Small Heath"], value="Birmingham City")
+    matches = matches.replace(to_replace="Newton Heath", value="Manchester Utd")
+    matches = matches.replace(to_replace="Stoke", value="Stoke City")
+    matches = matches.replace(to_replace="The Wednesday", value="Sheffield Weds")
     return matches
                 
 def cleanTeams():
