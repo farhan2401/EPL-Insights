@@ -2,7 +2,7 @@
 from datetime import datetime
 import pandas as pd
 
-# Import season stats
+# Remove the first column and rename certain teams to their current names
 def cleanStats():
     stats = pd.read_csv('data/seasonstats.csv')
     stats = stats.drop(columns=['Unnamed: 0'], axis = 1, inplace=False)
@@ -12,7 +12,7 @@ def cleanStats():
     stats = stats.replace(to_replace="The Wednesday", value="Sheffield Weds")
     return stats
 
-# Import matches
+# Remove the id column and remove null matches. Also renames certain teams to their current names
 def cleanMatches():
     matches = pd.read_csv('data/matches.csv')
     homeTeams = matches['Home']
@@ -21,29 +21,30 @@ def cleanMatches():
         if vals[i]:
             matches = matches.drop(i)
     matches = matches.drop(columns=['Unnamed: 0'], axis = 1, inplace=False)
-    matches = matches.replace(to_replace=["Birmingham", "Small Heath"], value="Birmingham City")
-    matches = matches.replace(to_replace="Newton Heath", value="Manchester Utd")
-    matches = matches.replace(to_replace="Stoke", value="Stoke City")
-    matches = matches.replace(to_replace="The Wednesday", value="Sheffield Weds")
+    #matches = matches.replace(to_replace=["Birmingham", "Small Heath"], value="Birmingham City")
+    #matches = matches.replace(to_replace="Newton Heath", value="Manchester Utd")
+    #matches = matches.replace(to_replace="Stoke", value="Stoke City")
+    #matches = matches.replace(to_replace="The Wednesday", value="Sheffield Weds")
     return matches
                 
+# Remove the id column and then sort the teams alphabetically
 def cleanTeams():
     teams = pd.read_csv('data/teams.csv')
-    teams = teams.sort_values('0')
     teams = teams.drop(teams.columns[0], axis = 1, inplace = False)
+    teams = teams.sort_values('0')
     return teams
     
     
             
 if __name__ == '__main__':
-    teams = cleanTeams()
+    #teams = cleanTeams()
     matches = cleanMatches()
-    stats = cleanStats()
+    #stats = cleanStats()
     
-    print(teams)
+    #print(teams)
     print(matches)
-    print(stats)
+    #print(stats)
     
-    teams.to_csv('data/teams.csv')
+    #teams.to_csv('data/teams.csv')
     matches.to_csv('data/matches.csv')
-    stats.to_csv('data/seasonstats.csv')
+    #stats.to_csv('data/seasonstats.csv')
