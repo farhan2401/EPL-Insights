@@ -29,9 +29,10 @@ body {
     animation: fadeIn 5s;
 }
 .btns {
-    justify-content: center;
+    justify-content: space-between;
     display: flex;
-    gap: 25px;
+    flex-wrap: wrap;
+    gap: 20px;
     list-style: none;
     animation: fadeIn 5s;
 }
