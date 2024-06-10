@@ -5,7 +5,7 @@
 <html>
     <head>
         <title>{{stats.0.squad}}</title>
-
+        <link rel="stylesheet" type="text/css" href={% static 'css/seasonpage.css' %}>
     </head>
     <body>
         <div>
@@ -16,6 +16,7 @@
             <table cellpadding="0" cellspacing="0" border="0">
                 <thead>
                     <tr>
+                        <th>Season</th>
                         <th>Squad</th>
                         <th>Wins</th>
                         <th>Draws</th>
@@ -37,7 +38,25 @@
         <div class="stats-content">
             <table cellpadding="0" cellspacing="0" border="0">
                 <tbody>
-                        
+                    {% for stat in stats %}
+                    <tr>
+                        <td data-title="Season">{{stat.season}}</td>
+                        <td data-title="Squad">{{stat.squad}}</td>
+                        <td data-title="Wins">{{stat.wins}}</td>
+                        <td data-title="Draws">{{stat.draws}}</td>
+                        <td data-title="Losses">{{stat.losses}}</td>
+                        <td data-title="Points">{{stat.points}}</td>
+                        <td data-title="GF">{{stat.goalsF}}</td>
+                        <td data-title="GA">{{stat.goalsA}}</td>
+                        <td data-title="Shots">{{stat.shots}}</td>
+                        <td data-title="Shots On Target">{{stat.shotsOT}}</td>
+                        <td data-title="Pass Att">{{stat.att}}</td>
+                        <td data-title="Pass Cmp">{{stat.cmp}}</td>
+                        <td data-title="Pass %">{{stat.cmpPerc}}</td>
+                        <td data-title="Yellow Cards">{{stat.crdY}}</td>
+                        <td data-title="Red Cards">{{stat.crdR}}</td>
+                    </tr>
+                    {% endfor %}
                 </tbody>
             </table>
         </div>
@@ -63,8 +82,18 @@
         <div class="match-content">
             <table cellpadding="0" cellspacing="0" border="0">
                 <tbody>
+                    {% for match in matches %}
                     <tr>
+                        <td data-title="Date">{{match.date}}</td>
+                        <td data-title="Home">{{match.home}}</td>
+                        <td data-title="Home xG">{{match.homeXG}}</td>
+                        <td data-title="Score">{{match.homeGoals}}-{{match.awayGoals}}</td>
+                        <td data-title="Away xG">{{match.awayXG}}</td>
+                        <td data-title="Away">{{match.away}}</td>
+                        <td data-title="Attendance">{{match.attendance}}</td>
+                        <td data-title="Venue">{{match.venue}}</td>
                     </tr>
+                    {% endfor %}
                 </tbody>
             </table>
         </div>
