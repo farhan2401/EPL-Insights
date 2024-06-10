@@ -4,22 +4,23 @@
 {% load static %}
 <html>
     <head>
-        <title>Teams Home Page</title>
+        <title>All Teams</title>
         <link rel="stylesheet" type="text/css" href={% static 'css/teamshome.css' %}>
-    </head>
     </head>
     <body>
         <h3 class="teamsheader">Teams</h3>
         <ul class="teams">
         {% for team in teams %}
             <li>
-                <div class="card" style="width: 18rem;">
-                    <img src="/static/images/{{team.squad}}.png" class="card-img-top" alt="{{team.squad}} logo">
-                    <div class="card-body">
-                        <h5 class="card-title">{{team.squad}}</h5>
-                        <a href=#>See Stats and Matches</a>
+                <a href={% url 'teamview' team.squad%} class="btn">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/static/images/{{team.squad}}.png" class="card-img-top" alt="{{team.squad}} logo">
+                        <div class="card-body">
+                            <h5 class="card-title">{{team.squad}}</h5>
+                            <p>See Stats and Matches</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </li>
         {% endfor %}
         </ul>
