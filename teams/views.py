@@ -9,7 +9,11 @@ def teams(request):
 
 def teamview(request, usrteam):
     stats = statsTbl.objects.all().filter(squad=usrteam)
-    # MAKE IT SO BOTH HOME AND AWAY GAMES ARE DISPLAYED
-    matches = matchesTbl.objects.all().filter(home=usrteam).filter(away=usrteam)
-    context = {"stats": stats, "matches": matches}
+    context = {"stats": stats}
     return render(request, 'teams/teampage.html', context)
+
+def teammatchview(request, usrteam, usrseason):
+    home = matchesTbl.objects.all().filter(home=usrteam).filter(season=usrseason)
+    away = matchesTbl.objects.all().filter(away=usrteam).filter(season=usrseason)
+    context = {"home": home, "away": away}
+    return HttpResponse("Matches")
