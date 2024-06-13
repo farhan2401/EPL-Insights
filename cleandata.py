@@ -21,10 +21,10 @@ def cleanMatches():
         if vals[i]:
             matches = matches.drop(i)
     matches = matches.drop(columns=['Unnamed: 0'], axis = 1, inplace=False)
-    #matches = matches.replace(to_replace=["Birmingham", "Small Heath"], value="Birmingham City")
-    #matches = matches.replace(to_replace="Newton Heath", value="Manchester Utd")
-    #matches = matches.replace(to_replace="Stoke", value="Stoke City")
-    #matches = matches.replace(to_replace="The Wednesday", value="Sheffield Weds")
+    matches = matches.replace(to_replace=["Birmingham", "Small Heath"], value="Birmingham City")
+    matches = matches.replace(to_replace="Newton Heath", value="Manchester Utd")
+    matches = matches.replace(to_replace="Stoke", value="Stoke City")
+    matches = matches.replace(to_replace="The Wednesday", value="Sheffield Weds")
     return matches
                 
 # Remove the id column and then sort the teams alphabetically
@@ -37,14 +37,14 @@ def cleanTeams():
     
             
 if __name__ == '__main__':
-    #teams = cleanTeams()
+    teams = cleanTeams()
     matches = cleanMatches()
-    #stats = cleanStats()
+    stats = cleanStats()
     
-    #print(teams)
-    print(matches)
-    #print(stats)
+    print(teams)
+    print(matches.info())
+    print(stats)
     
-    #teams.to_csv('data/teams.csv')
+    teams.to_csv('data/teams.csv')
     matches.to_csv('data/matches.csv')
-    #stats.to_csv('data/seasonstats.csv')
+    stats.to_csv('data/seasonstats.csv')
