@@ -1,0 +1,53 @@
+{% extends 'teams/teammatches.html' %}
+
+{% block hometblheader%}
+<th>Date</th>
+<th>Home</th>
+<th>Home xG</th>
+<th>Score</th>
+<th>Away xG</th>
+<th>Away</th>
+<th>Attendance</th>
+<th>Venue</th>
+{% endblock %}
+
+{% block hometblcontent %}
+{% for match in homeGames %}
+<tr>
+    <td data-title="Date">{{match.date}}</td>
+    <td data-title="Home">{{match.home}}</td>
+    <td data-title="Home xG">{{match.homeXG}}</td>
+    <td data-title="Score">{{match.homeGoals}}-{{match.awayGoals}}</td>
+    <td data-title="Away xG">{{match.awayXG}}</td>
+    <td data-title="Away">{{match.away}}</td>
+    <td data-title="Attendance">{{match.attendance}}</td>
+    <td data-title="Venue">{{match.venue}}</td>
+</tr>
+{% endfor %}
+{% endblock %}
+
+{% block awaytblheader%}
+<th>Date</th>
+<th>Home</th>
+<th>Home xG</th>
+<th>Score</th>
+<th>Away xG</th>
+<th>Away</th>
+<th>Attendance</th>
+<th>Venue</th>
+{% endblock %}
+
+{% block awaytblcontent %}
+{% for match in awayGames %}
+<tr>
+    <td data-title="Date">{{match.date}}</td>
+    <td data-title="Home">{{match.home}}</td>
+    <td data-title="Home xG">{{match.homeXG}}</td>
+    <td data-title="Score">{{match.homeGoals}}-{{match.awayGoals}}</td>
+    <td data-title="Away xG">{{match.awayXG}}</td>
+    <td data-title="Away">{{match.away}}</td>
+    <td data-title="Attendance">{{match.attendance}}</td>
+    <td data-title="Venue">{{match.venue}}</td>
+</tr>
+{% endfor %}
+{% endblock %}
