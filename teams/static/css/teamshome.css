@@ -29,6 +29,7 @@ body {
     animation: fadeIn 5s;
 }
 .teams {
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;

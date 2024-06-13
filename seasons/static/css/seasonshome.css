@@ -29,11 +29,10 @@ body {
     animation: fadeIn 5s;
 }
 .seasons {
-    color: white;
-    justify-content: space-between;
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 40px;
     list-style: none;
     animation: fadeIn 5s
 }
