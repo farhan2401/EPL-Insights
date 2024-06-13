@@ -29,11 +29,11 @@ body {
     animation: fadeIn 5s;
 }
 .btns {
-    justify-content: space-between;
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     list-style: none;
+    gap: 40px;
     animation: fadeIn 5s;
 }
 @keyframes fadeIn {
@@ -54,7 +54,7 @@ body {
     justify-content: center;
     line-height: 1em;
     max-width: 100%;
-    min-width: 140px;
+    min-width: 200px;
     padding: 3px;
     text-decoration: none;
     user-select: none;
@@ -63,12 +63,10 @@ body {
     white-space: nowrap;
     cursor: pointer;
 }
-  
 .button-64:active,
 .button-64:hover {
     outline: 0;
 }
-  
 .button-64 span {
     background-color: rgb(5, 6, 45);
     padding: 16px 24px;
@@ -77,14 +75,6 @@ body {
     height: 100%;
     transition: 300ms;
 }
-  
 .button-64:hover span {
     background: none;
-}
-  
-@media (min-width: 768px) {
-    .button-64 {
-        font-size: 24px;
-        min-width: 196px;
-    }
 }
