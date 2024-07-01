@@ -38,23 +38,24 @@ def predictUpcoming(model, upcoming):
     results = pd.DataFrame(columns=['homeTeam', 'Home', 'Draw', 'Away', 'awayTeam'])
     # Go through each match and calculate the probability of home team win, draw, and away team win
     for index in range(0, len(upcoming.index)):
-        row = upcoming.iloc[[index]]
-        homeTeam = row['home']
-        awayTeam = row['away']
+        row = upcoming.iloc[[index]].values
+        print(row)
+        homeTeam = row[0][2]
+        awayTeam = row[0][3]
         matchRes = simulateMatch(model, homeTeam, awayTeam, max_goals=10)
         homeProb = np.sum(np.tril(matchRes, -1))
         drawProb = np.sum(np.diag(matchRes))
         awayProb = np.sum(np.triu(matchRes, 1))
         # Create a data frame storing the results from this match
-        resultDf = pd.DataFrame(data={'homeTeam':homeTeam, 'Home':homeProb, 'Draw':drawProb,
-                                        'Away':awayProb, 'awayTeam':awayTeam})
+        resultDf = pd.DataFrame(data={'homeTeam':homeTeam, 'Home':[homeProb], 'Draw':[drawProb],
+                                    'Away':[awayProb], 'awayTeam':awayTeam})
         # Append to the main dataframe
         results = results._append(resultDf)
     return results
 
 def main():
-    results = predictUpcoming(poisson_model, upcoming)
-    print(results)
+    matchPred = predictUpcoming(poisson_model, upcoming)
+    print(matchPred)
     
 if (__name__ == "__main__"):
     main()
