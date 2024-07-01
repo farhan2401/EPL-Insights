@@ -23,5 +23,6 @@ urlpatterns = [
     path("", include("home.urls")),
     path("seasons/", include("seasons.urls")),
     path("teams/", include("teams.urls")),
+    path("predictions/", include("predictions.urls")),
     path("admin/", admin.site.urls),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

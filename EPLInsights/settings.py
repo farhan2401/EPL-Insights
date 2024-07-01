@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "home",
     "seasons",
     "teams",
+    "predictions",
 ]
 
 MIDDLEWARE = [
