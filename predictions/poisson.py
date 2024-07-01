@@ -47,8 +47,8 @@ def predictUpcoming(model, upcoming):
         drawProb = np.sum(np.diag(matchRes))
         awayProb = np.sum(np.triu(matchRes, 1))
         # Create a data frame storing the results from this match
-        resultDf = pd.DataFrame(data={'homeTeam':homeTeam, 'Home':[homeProb], 'Draw':[drawProb],
-                                    'Away':[awayProb], 'awayTeam':awayTeam})
+        resultDf = pd.DataFrame(data={'homeTeam':homeTeam, 'Home':[f"{homeProb:.2%}"], 'Draw':[f"{drawProb:.2%}"],
+                                    'Away':[f"{awayProb:.2%}"], 'awayTeam':awayTeam})
         # Append to the main dataframe
         results = results._append(resultDf)
     return results
