@@ -6,7 +6,6 @@ import pandas as pd
 import statsmodels.api as sm
 import statsmodels.formula.api as smf
 import numpy as np
-import seaborn
 from scipy.stats import poisson,skellam
 
 # Create a connection to the database and get the upcoming matches and past matches
