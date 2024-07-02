@@ -40,8 +40,8 @@ def predictUpcoming(model, upcoming):
     for index in range(0, len(upcoming.index)):
         row = upcoming.iloc[[index]].values
         print(row)
-        homeTeam = row[0][2]
-        awayTeam = row[0][3]
+        homeTeam = row[0][3]
+        awayTeam = row[0][4]
         matchRes = simulateMatch(model, homeTeam, awayTeam, max_goals=10)
         homeProb = np.sum(np.tril(matchRes, -1))
         drawProb = np.sum(np.diag(matchRes))
