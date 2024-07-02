@@ -1,0 +1,101 @@
+,date,week,home,homePred,drawPred,awayPred,away,venue
+0,8/16/24,1,Manchester Utd,68.72%,18.26%,13.02%,Fulham,Old Trafford
+1,8/17/24,1,Ipswich Town,38.70%,26.53%,34.77%,Liverpool,Portman Road Stadium
+2,8/17/24,1,Newcastle Utd,56.45%,22.82%,20.73%,Southampton,St James' Park
+3,8/17/24,1,Nott'ham Forest,61.71%,20.77%,17.52%,Bournemouth,The City Ground
+4,8/17/24,1,Everton,59.54%,22.87%,17.60%,Brighton,Goodison Park
+5,8/17/24,1,Arsenal,62.51%,19.81%,17.68%,Wolves,Emirates Stadium
+6,8/17/24,1,West Ham,46.70%,23.44%,29.86%,Aston Villa,London Stadium
+7,8/18/24,1,Brentford,57.92%,22.81%,19.26%,Crystal Palace,Gtech Community Stadium
+8,8/18/24,1,Chelsea,51.16%,23.26%,25.58%,Manchester City,Stamford Bridge
+9,8/19/24,1,Leicester City,44.69%,23.49%,31.82%,Tottenham,King Power Stadium
+10,8/24/24,2,Liverpool,65.17%,19.30%,15.53%,Brentford,Anfield
+11,8/24/24,2,Bournemouth,39.11%,24.68%,36.20%,Newcastle Utd,Vitality Stadium
+12,8/24/24,2,Tottenham,53.04%,23.04%,23.92%,Everton,Tottenham Hotspur Stadium
+13,8/24/24,2,Aston Villa,45.27%,24.07%,30.66%,Arsenal,Villa Park
+14,8/24/24,2,Fulham,48.21%,23.57%,28.23%,Leicester City,Craven Cottage
+15,8/24/24,2,Crystal Palace,43.94%,26.43%,29.63%,West Ham,Selhurst Park
+16,8/24/24,2,Manchester City,57.01%,22.58%,20.41%,Ipswich Town,Etihad Stadium
+17,8/24/24,2,Southampton,48.32%,25.04%,26.64%,Nott'ham Forest,St Mary's Stadium
+18,8/24/24,2,Wolves,49.42%,22.89%,27.69%,Chelsea,Molineux Stadium
+19,8/24/24,2,Brighton,34.34%,26.81%,38.85%,Manchester Utd,The American Express Stadium
+20,8/31/24,3,Newcastle Utd,49.11%,23.70%,27.19%,Tottenham,St James' Park
+21,8/31/24,3,Chelsea,61.90%,22.12%,15.98%,Crystal Palace,Stamford Bridge
+22,8/31/24,3,Everton,66.68%,18.85%,14.47%,Bournemouth,Goodison Park
+23,8/31/24,3,Leicester City,46.87%,22.82%,30.30%,Aston Villa,King Power Stadium
+24,8/31/24,3,Nott'ham Forest,50.99%,22.87%,26.14%,Wolves,The City Ground
+25,8/31/24,3,West Ham,44.46%,23.99%,31.55%,Manchester City,London Stadium
+26,8/31/24,3,Manchester Utd,50.33%,24.04%,25.63%,Liverpool,Old Trafford
+27,8/31/24,3,Arsenal,65.06%,20.88%,14.06%,Brighton,Emirates Stadium
+28,8/31/24,3,Ipswich Town,56.65%,23.28%,20.07%,Fulham,Portman Road Stadium
+29,8/31/24,3,Brentford,53.99%,22.82%,23.19%,Southampton,Gtech Community Stadium
+30,9/14/24,4,Tottenham,46.62%,24.33%,29.04%,Arsenal,Tottenham Hotspur Stadium
+31,9/14/24,4,Brighton,43.52%,27.57%,28.91%,Ipswich Town,The American Express Stadium
+32,9/14/24,4,Crystal Palace,44.86%,25.62%,29.51%,Leicester City,Selhurst Park
+33,9/14/24,4,Bournemouth,37.01%,24.78%,38.21%,Chelsea,Vitality Stadium
+34,9/14/24,4,Wolves,51.74%,22.41%,25.85%,Newcastle Utd,Molineux Stadium
+35,9/14/24,4,Manchester City,59.94%,20.42%,19.64%,Brentford,Etihad Stadium
+36,9/14/24,4,Liverpool,63.08%,20.82%,16.10%,Nott'ham Forest,Anfield
+37,9/14/24,4,Southampton,37.74%,25.61%,36.65%,Manchester Utd,St Mary's Stadium
+38,9/14/24,4,Aston Villa,51.77%,22.92%,25.31%,Everton,Villa Park
+39,9/14/24,4,Fulham,47.23%,24.33%,28.44%,West Ham,Craven Cottage
+40,9/21/24,5,Liverpool,73.12%,16.32%,10.55%,Bournemouth,Anfield
+41,9/21/24,5,Leicester City,45.49%,23.75%,30.75%,Everton,King Power Stadium
+42,9/21/24,5,Crystal Palace,32.11%,26.89%,40.99%,Manchester Utd,Selhurst Park
+43,9/21/24,5,Southampton,47.48%,25.78%,26.74%,Ipswich Town,St Mary's Stadium
+44,9/21/24,5,Tottenham,59.55%,20.64%,19.81%,Brentford,Tottenham Hotspur Stadium
+45,9/21/24,5,West Ham,45.11%,24.36%,30.53%,Chelsea,London Stadium
+46,9/21/24,5,Brighton,44.30%,26.81%,28.89%,Nott'ham Forest,The American Express Stadium
+47,9/21/24,5,Manchester City,46.95%,24.15%,28.90%,Arsenal,Etihad Stadium
+48,9/21/24,5,Fulham,42.41%,25.13%,32.47%,Newcastle Utd,Craven Cottage
+49,9/21/24,5,Aston Villa,56.55%,20.81%,22.64%,Wolves,Villa Park
+50,9/28/24,6,Bournemouth,43.94%,25.05%,31.01%,Southampton,Vitality Stadium
+51,9/28/24,6,Chelsea,59.88%,22.70%,17.43%,Brighton,Stamford Bridge
+52,9/28/24,6,Arsenal,65.83%,18.85%,15.32%,Leicester City,Emirates Stadium
+53,9/28/24,6,Brentford,54.28%,22.01%,23.71%,West Ham,Gtech Community Stadium
+54,9/28/24,6,Newcastle Utd,49.05%,23.58%,27.37%,Manchester City,St James' Park
+55,9/28/24,6,Manchester Utd,57.83%,21.64%,20.53%,Tottenham,Old Trafford
+56,9/28/24,6,Everton,61.56%,22.30%,16.14%,Crystal Palace,Goodison Park
+57,9/28/24,6,Nott'ham Forest,57.19%,22.64%,20.18%,Fulham,The City Ground
+58,9/28/24,6,Ipswich Town,47.65%,24.41%,27.95%,Aston Villa,Portman Road Stadium
+59,9/28/24,6,Wolves,41.44%,24.17%,34.40%,Liverpool,Molineux Stadium
+60,10/5/24,7,Crystal Palace,30.98%,27.49%,41.54%,Liverpool,Selhurst Park
+61,10/5/24,7,Manchester City,64.15%,19.83%,16.02%,Fulham,Etihad Stadium
+62,10/5/24,7,Brentford,51.65%,21.79%,26.56%,Wolves,Gtech Community Stadium
+63,10/5/24,7,West Ham,49.11%,24.59%,26.30%,Ipswich Town,London Stadium
+64,10/5/24,7,Aston Villa,45.19%,23.75%,31.06%,Manchester Utd,Villa Park
+65,10/5/24,7,Chelsea,56.43%,22.64%,20.93%,Nott'ham Forest,Stamford Bridge
+66,10/5/24,7,Arsenal,63.88%,20.59%,15.53%,Southampton,Emirates Stadium
+67,10/5/24,7,Leicester City,61.32%,20.01%,18.66%,Bournemouth,King Power Stadium
+68,10/5/24,7,Brighton,39.36%,26.62%,34.03%,Tottenham,The American Express Stadium
+69,10/5/24,7,Everton,53.58%,23.12%,23.30%,Newcastle Utd,Goodison Park
+70,10/19/24,8,Bournemouth,31.42%,24.64%,43.95%,Arsenal,Vi
+71,10/19/24,8,Southampton,51.71%,23.23%,25.06%,Leicester City,St Mary's Stadium
+72,10/19/24,8,Ipswich Town,46.21%,25.45%,28.34%,Everton,Portman Road Stadium
+73,10/19/24,8,Newcastle Utd,57.99%,23.26%,18.75%,Brighton,St James' Park
+74,10/19/24,8,Nott'ham Forest,56.79%,24.11%,19.09%,Crystal Palace,The City Ground
+75,10/19/24,8,Fulham,41.71%,24.47%,33.82%,Aston Villa,Craven Cottage
+76,10/19/24,8,Manchester Utd,64.91%,19.03%,16.06%,Brentford,Old Trafford
+77,10/19/24,8,Wolves,48.78%,22.59%,28.63%,Manchester City,Molineux Stadium
+78,10/19/24,8,Tottenham,60.14%,20.86%,19.00%,West Ham,Tottenham Hotspur Stadium
+79,10/19/24,8,Liverpool,58.58%,22.10%,19.31%,Chelsea,Anfield
+80,10/26/24,9,Everton,62.18%,20.88%,16.94%,Fulham, Goodison Park
+81,10/26/24,9,Brentford,50.95%,23.73%,25.32%,Ipswich Town,Gtech Community Stadium
+82,10/26/24,9,Leicester City,50.27%,23.24%,26.49%,Nott'ham Forest,King Power Stadium
+83,10/26/24,9,Chelsea,53.92%,22.98%,23.10%,Newcastle Utd,Stamford Bridge
+84,10/26/24,9,West Ham,38.95%,24.63%,36.42%,Manchester Utd,London Stadium
+85,10/26/24,9,Arsenal,49.61%,24.51%,25.88%,Liverpool,Emirates Stadium
+86,10/26/24,9,Brighton,44.06%,25.24%,30.69%,Wolves,The American Express Stadium
+87,10/26/24,9,Manchester City,60.03%,21.45%,18.51%,Southampton,Etihad Stadium
+88,10/26/24,9,Aston Villa,67.29%,18.11%,14.60%,Bournemouth,Villa Park
+89,10/26/24,9,Crystal Palace,36.97%,26.91%,36.12%,Tottenham,Selhurst Park
+90,11/2/24,10,Manchester Utd,58.24%,21.77%,20.00%,Chelsea,Old Trafford
+91,11/2/24,10,Southampton,43.84%,25.48%,30.68%,Everton,St Mary's Stadium
+92,11/2/24,10,Liverpool,66.01%,20.63%,13.36%,Brighton,Anfield
+93,11/2/24,10,Tottenham,54.67%,21.98%,23.36%,Aston Villa,Tottenham Hotspur Stadium
+94,11/2/24,10,Wolves,60.47%,21.70%,17.83%,Crystal Palace,Molineux Stadium
+95,11/2/24,10,Nott'ham Forest,53.44%,23.15%,23.41%,West Ham,The City Ground
+96,11/2/24,10,Newcastle Utd,43.50%,24.94%,31.55%,Arsenal,St James' Park
+97,11/2/24,10,Fulham,46.43%,23.93%,29.64%,Brentford,Craven Cottage
+98,11/2/24,10,Ipswich Town,54.13%,22.92%,22.94%,Leicester City,Portman Road Stadium
+99,11/2/24,10,Bournemouth,36.26%,24.28%,39.45%,Manchester City,Vitality Stadium

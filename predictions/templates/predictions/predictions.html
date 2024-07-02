@@ -9,6 +9,11 @@
     </head>
     <body>
         <h3>Predictions</h3>
+        <ul>
+        {% for pred in results %}
+            <li>{{pred.homeTeam}}</li>
+        {% endfor %}
+        </ul>
         <p class="notice">
             Predictions are based off of a univarite Poisson Distributon model created on all 50,568 matches. 
             The model is trained simply on the number of goals scored by each team in each match and takes into account weather or not the team was home or away.
@@ -16,7 +21,7 @@
             These prediction results should not be used for the purpose of sports betting as they do not take into account many other factors that could affect the outcome of the match.
         </p>
         <p>
-            In the future, more accurate predictions could be achieved using either a bivariate Poisson Distribution model or Weibull Distribution.
+            In the future, more accurate predictions could be achieved using either a bivariate Poisson Distribution model or Weibull Distribution, as well as taking into account the factors listed above.
         </p>
         <p class="credit">
             The code for the Poisson Distribution was taken and modified to fit my use case from David Sheehan. The original article can be found 
