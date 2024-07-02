@@ -1,0 +1,101 @@
+﻿,Date,Week,Home,Away,Venue
+0,8/16/24,1,Manchester Utd,Fulham,Old Trafford
+1,8/17/24,1,Ipswich Town,Liverpool,Portman Road Stadium
+2,8/17/24,1,Newcastle Utd,Southampton,St James' Park
+3,8/17/24,1,Nott'ham Forest,Bournemouth,The City Ground
+4,8/17/24,1,Everton,Brighton,Goodison Park
+5,8/17/24,1,Arsenal,Wolves,Emirates Stadium
+6,8/17/24,1,West Ham,Aston Villa,London Stadium
+7,8/18/24,1,Brentford,Crystal Palace,Gtech Community Stadium
+8,8/18/24,1,Chelsea,Manchester City,Stamford Bridge
+9,8/19/24,1,Leicester City,Tottenham,King Power Stadium
+10,8/24/24,2,Liverpool,Brentford,Anfield
+11,8/24/24,2,Bournemouth,Newcastle Utd,Vitality Stadium
+12,8/24/24,2,Tottenham,Everton,Tottenham Hotspur Stadium
+13,8/24/24,2,Aston Villa,Arsenal,Villa Park
+14,8/24/24,2,Fulham,Leicester City,Craven Cottage
+15,8/24/24,2,Crystal Palace,West Ham,Selhurst Park
+16,8/24/24,2,Manchester City,Ipswich Town,Etihad Stadium
+17,8/24/24,2,Southampton,Nott'ham Forest,St Mary's Stadium
+18,8/24/24,2,Wolves,Chelsea,Molineux Stadium
+19,8/24/24,2,Brighton,Manchester Utd,The American Express Stadium
+20,8/31/24,3,Newcastle Utd,Tottenham,St James' Park
+21,8/31/24,3,Chelsea,Crystal Palace,Stamford Bridge
+22,8/31/24,3,Everton,Bournemouth,Goodison Park
+23,8/31/24,3,Leicester City,Aston Villa,King Power Stadium
+24,8/31/24,3,Nott'ham Forest,Wolves,The City Ground
+25,8/31/24,3,West Ham,Manchester City,London Stadium
+26,8/31/24,3,Manchester Utd,Liverpool,Old Trafford
+27,8/31/24,3,Arsenal,Brighton,Emirates Stadium
+28,8/31/24,3,Ipswich Town,Fulham,Portman Road Stadium
+29,8/31/24,3,Brentford,Southampton,Gtech Community Stadium
+30,9/14/24,4,Tottenham,Arsenal,Tottenham Hotspur Stadium
+31,9/14/24,4,Brighton,Ipswich Town,The American Express Stadium
+32,9/14/24,4,Crystal Palace,Leicester City,Selhurst Park
+33,9/14/24,4,Bournemouth,Chelsea,Vitality Stadium
+34,9/14/24,4,Wolves,Newcastle Utd,Molineux Stadium
+35,9/14/24,4,Manchester City,Brentford,Etihad Stadium
+36,9/14/24,4,Liverpool,Nott'ham Forest,Anfield
+37,9/14/24,4,Southampton,Manchester Utd,St Mary's Stadium
+38,9/14/24,4,Aston Villa,Everton,Villa Park
+39,9/14/24,4,Fulham,West Ham,Craven Cottage
+40,9/21/24,5,Liverpool,Bournemouth,Anfield
+41,9/21/24,5,Leicester City,Everton,King Power Stadium
+42,9/21/24,5,Crystal Palace,Manchester Utd,Selhurst Park
+43,9/21/24,5,Southampton,Ipswich Town,St Mary's Stadium
+44,9/21/24,5,Tottenham,Brentford,Tottenham Hotspur Stadium
+45,9/21/24,5,West Ham,Chelsea,London Stadium
+46,9/21/24,5,Brighton,Nott'ham Forest,The American Express Stadium
+47,9/21/24,5,Manchester City,Arsenal,Etihad Stadium
+48,9/21/24,5,Fulham,Newcastle Utd,Craven Cottage
+49,9/21/24,5,Aston Villa,Wolves,Villa Park
+50,9/28/24,6,Bournemouth,Southampton,Vitality Stadium
+51,9/28/24,6,Chelsea,Brighton,Stamford Bridge
+52,9/28/24,6,Arsenal,Leicester City,Emirates Stadium
+53,9/28/24,6,Brentford,West Ham,Gtech Community Stadium
+54,9/28/24,6,Newcastle Utd,Manchester City,St James' Park
+55,9/28/24,6,Manchester Utd,Tottenham,Old Trafford
+56,9/28/24,6,Everton,Crystal Palace,Goodison Park
+57,9/28/24,6,Nott'ham Forest,Fulham,The City Ground
+58,9/28/24,6,Ipswich Town,Aston Villa,Portman Road Stadium
+59,9/28/24,6,Wolves,Liverpool,Molineux Stadium
+60,10/5/24,7,Crystal Palace,Liverpool,Selhurst Park
+61,10/5/24,7,Manchester City,Fulham,Etihad Stadium
+62,10/5/24,7,Brentford,Wolves,Gtech Community Stadium
+63,10/5/24,7,West Ham,Ipswich Town,London Stadium
+64,10/5/24,7,Aston Villa,Manchester Utd,Villa Park
+65,10/5/24,7,Chelsea,Nott'ham Forest,Stamford Bridge
+66,10/5/24,7,Arsenal,Southampton,Emirates Stadium
+67,10/5/24,7,Leicester City,Bournemouth,King Power Stadium
+68,10/5/24,7,Brighton,Tottenham,The American Express Stadium
+69,10/5/24,7,Everton,Newcastle Utd,Goodison Park
+70,10/19/24,8,Bournemouth,Arsenal,Vi
+71,10/19/24,8,Southampton,Leicester City,St Mary's Stadium
+72,10/19/24,8,Ipswich Town,Everton,Portman Road Stadium
+73,10/19/24,8,Newcastle Utd,Brighton,St James' Park
+74,10/19/24,8,Nott'ham Forest,Crystal Palace,The City Ground
+75,10/19/24,8,Fulham,Aston Villa,Craven Cottage
+76,10/19/24,8,Manchester Utd,Brentford,Old Trafford
+77,10/19/24,8,Wolves,Manchester City,Molineux Stadium
+78,10/19/24,8,Tottenham,West Ham,Tottenham Hotspur Stadium
+79,10/19/24,8,Liverpool,Chelsea,Anfield
+80,10/26/24,9,Everton,Fulham, Goodison Park
+81,10/26/24,9,Brentford,Ipswich Town,Gtech Community Stadium
+82,10/26/24,9,Leicester City,Nott'ham Forest,King Power Stadium
+83,10/26/24,9,Chelsea,Newcastle Utd,Stamford Bridge
+84,10/26/24,9,West Ham,Manchester Utd,London Stadium
+85,10/26/24,9,Arsenal,Liverpool,Emirates Stadium
+86,10/26/24,9,Brighton,Wolves,The American Express Stadium
+87,10/26/24,9,Manchester City,Southampton,Etihad Stadium
+88,10/26/24,9,Aston Villa,Bournemouth,Villa Park
+89,10/26/24,9,Crystal Palace,Tottenham,Selhurst Park
+90,11/2/24,10,Manchester Utd,Chelsea,Old Trafford
+91,11/2/24,10,Southampton,Everton,St Mary's Stadium
+92,11/2/24,10,Liverpool,Brighton,Anfield
+93,11/2/24,10,Tottenham,Aston Villa,Tottenham Hotspur Stadium
+94,11/2/24,10,Wolves,Crystal Palace,Molineux Stadium
+95,11/2/24,10,Nott'ham Forest,West Ham,The City Ground
+96,11/2/24,10,Newcastle Utd,Arsenal,St James' Park
+97,11/2/24,10,Fulham,Brentford,Craven Cottage
+98,11/2/24,10,Ipswich Town,Leicester City,Portman Road Stadium
+99,11/2/24,10,Bournemouth,Manchester City,Vitality Stadium
