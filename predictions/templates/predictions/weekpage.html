@@ -2,4 +2,62 @@
 
 {% block content %}
 {% load static %}
+<html>
+    <head>
+        <title>Week {{weekPreds.0.week}} Predictions</title>
+        <link rel="stylesheet" type="text/css" href={% static 'css/weekpage.css' %}>
+    </head>
+    <body>
+        <div>
+            <h1 class="mainheader">Week {{weekPreds.0.week}} Predictions</h1>
+        </div>
+        <div class="tblheader">
+            <table cellpadding="0" cellspacing="0" border="0">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Home Team</th>
+                        <th>Home</th>
+                        <th>Draw</th>
+                        <th>Away</th>
+                        <th>Away Team</th>
+                        <th>Venue</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="week-content">
+            <table cellpadding="0" cellspacing="0" border="0">
+                <tbody>
+                        {% for pred in weekPreds %}
+                        <tr>
+                            <td data-title="Date">{{pred.date}}</td>
+                            <td data-title="Home Team"><img src="/static/images/{{pred.homeTeam}}.png" class="logo" alt="{{pred.homeTeam}} logo">{{pred.homeTeam}}</td>
+                            <td data-title="Home">{{pred.home}}</td>
+                            <td data-title="Draw">{{pred.draw}}</td>
+                            <td data-title="Away">{{pred.away}}</td>
+                            <td data-title="Away Team"><img src="/static/images/{{pred.awayTeam}}.png" class="logo" alt="{{pred.awayTeam}} logo">{{pred.awayTeam}}</td>
+                            <td data-title="Venue">{{pred.venue}}</td>
+                        </tr>
+                        {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="notice">
+            <p>
+                Predictions are based off of a univarite Poisson Distributon model created on all 50,568 matches. 
+                The model is trained simply on the number of goals scored by each team in each match and takes into account weather or not the team was home or away.
+                They do not take into account the current form of the teams, injuries, suspensions, or team motivation (time of season, upcoming matches, etc.). 
+                These prediction results should not be used for the purpose of sports betting as they do not take into account many other factors that could affect the outcome of the match.
+            </p>
+            <p>
+                In the future, more accurate predictions could be achieved using either a bivariate Poisson Distribution model or Weibull Distribution, as well as taking into account the factors listed above.
+            </p>
+            <p>
+                The code for the Poisson Distribution was taken and modified to fit my use case from David Sheehan. The original article can be found 
+                <a href='https://dashee87.github.io/football/python/predicting-football-results-with-statistical-modelling/' class="link"> here. </a>
+            </p>
+        </div>
+    </body>
+</html>
 {% endblock %}
