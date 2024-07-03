@@ -18,11 +18,4 @@ body {
     hsl(230deg 73% 23%) 93%,
     hsl(230deg 80% 24%) 100%
     );
-
-    color: white;
-}
-
-.link {
-    text-decoration: none;
-    color: white;
 }

@@ -19,7 +19,7 @@ body {
     hsl(230deg 80% 24%) 100%
     );
 }
-.seasonheader {
+.teamsheader {
     color: white;
     text-align: center;
     font-size: 75px;
@@ -28,11 +28,11 @@ body {
     padding-bottom: 25px;
     animation: fadeIn 5s;
 }
-.seasons {
+.teams {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 15px;
     list-style: none;
     animation: fadeIn 5s
 }
@@ -40,7 +40,10 @@ body {
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
-.seasonbtn {
+.btn {
+    text-decoration: none;
+}
+.card {
     padding: 15px 25px;
     border: unset;
     border-radius: 15px;
@@ -55,8 +58,21 @@ body {
     transition: all 250ms;
     overflow: hidden;
     width: 200px;
+    height: 300px;
+    p {
+        color: #e8e8e8;
+        text-decoration: none;
+    }
+    .card-title {
+        color: #e8e8e8;
+    }
+    img {
+        width: auto;
+        height: 150px;
+        margin-top: 15px;
+    }
 }
-.seasonbtn::before {
+.card::before {
     content: "";
     position: absolute;
     top: 0;
@@ -68,11 +84,16 @@ body {
     z-index: -1;
     -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
     box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-    transition: all 250ms
-}  
-.seasonbtn:hover {
-    color: #212121;
-}  
-.seasonbtn:hover::before {
+    transition: all 250ms;
+}
+.card:hover {
+    .card-title {
+        color: #212121;
+    }
+    p {
+        color: #212121;
+    }
+}
+.card:hover::before {
     width: 100%;
 }

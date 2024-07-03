@@ -10,9 +10,9 @@
     <body>
         <h3>Predictions</h3>
         <ul>
-        {% for pred in results %}
-            <li>{{pred.homeTeam}}</li>
-        {% endfor %}
+            {% for pred in results %}
+                <li>{{pred.homeTeam}}</li>
+            {% endfor %}
         </ul>
         <p class="notice">
             Predictions are based off of a univarite Poisson Distributon model created on all 50,568 matches. 
@@ -25,7 +25,7 @@
         </p>
         <p class="credit">
             The code for the Poisson Distribution was taken and modified to fit my use case from David Sheehan. The original article can be found 
-            <a href='https://dashee87.github.io/football/python/predicting-football-results-with-statistical-modelling/'> here. </a>
+            <a href='https://dashee87.github.io/football/python/predicting-football-results-with-statistical-modelling/' class="link"> here. </a>
         </p>
     </body>
 </html>

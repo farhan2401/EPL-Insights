@@ -10,17 +10,18 @@ from scipy.stats import poisson,skellam
 
 # Create a connection to the database and get the upcoming matches and past matches
 cnx = sqlite3.connect('db.sqlite3', check_same_thread=False)
-upcoming = pd.read_sql_query("SELECT * FROM predictions_upcomingmatches", cnx)
-pastMatches = pd.read_sql_query("SELECT home, homeGoals, awayGoals, away FROM home_matchestbl", cnx)
+#upcoming = pd.read_sql_query("SELECT * FROM predictions_upcomingmatches", cnx)
+#pastMatches = pd.read_sql_query("SELECT home, homeGoals, awayGoals, away FROM home_matchestbl", cnx)
+
 
 # Build the model
-goal_model_data = pd.concat([pastMatches[['home', 'away', 'homeGoals']].rename(
+'''goal_model_data = pd.concat([pastMatches[['home', 'away', 'homeGoals']].rename(
     columns={'home':'team', 'away':'opponent', 'homeGoals':'goals'}).assign(home=1),
     pastMatches[['away', 'home', 'awayGoals']].rename(
     columns={'away':'team', 'home':'opponent', 'awayGoals':'goals'}).assign(home=0)
 ])
 poisson_model = smf.glm(formula="goals ~ home + team + opponent", data=goal_model_data, 
-                        family=sm.families.Poisson()).fit()
+                        family=sm.families.Poisson()).fit()'''
 
 # Create a method to predict the number of goals for each team
 def simulateMatch(model, homeTeam, awayTeam, max_goals=10):
@@ -73,6 +74,3 @@ def main():
     print(finalResults)
     # load into a database
     finalResults.to_csv('./data/predictions.csv')
-    
-if (__name__ == "__main__"):
-    main()

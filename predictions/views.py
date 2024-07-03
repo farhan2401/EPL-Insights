@@ -6,5 +6,4 @@ from predictions.poisson import *
 # Create your views here.
 def predictions(request):
     results = upcomingPreds.objects.all()
-    print(results)
-    return render(request, 'predictions/predictions.html', {"results":results})
+    return render(request, 'predictions/predictions.html', {"results": results})
