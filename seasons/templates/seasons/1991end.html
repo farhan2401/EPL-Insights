@@ -28,8 +28,8 @@
 {% for match in matches %}
 <tr>
     <td data-title="Date">{{match.date}}</td>
-    <td data-title="Home">{{match.home}}</td>
-    <td data-title="Score">{{match.homeGoals}}-{{match.awayGoals}}</td>
+    <td data-title="Home"><img src="/static/images/{{match.home}}.png" class="match-logo" alt="{{match.home}} logo">{{match.home}}</td>
+    <td data-title="Score"><img src="/static/images/{{match.away}}.png" class="match-logo" alt="{{match.away}} logo">{{match.homeGoals}}-{{match.awayGoals}}</td>
     <td data-title="Away">{{match.away}}</td>
 </tr>
 {% endfor %}

@@ -26,6 +26,7 @@ body {
     margin-top: 75px;
     width: 200px;
     height: auto;
+    animation: fadeIn 5s;
 }
 .mainheader {
     color: white;

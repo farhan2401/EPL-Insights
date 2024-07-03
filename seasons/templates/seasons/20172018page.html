@@ -12,7 +12,7 @@
 {% block statstblcontent %}
 {% for stat in stats %}
 <tr>
-    <td data-title="Squad" class="squadtd">{{stat.squad}}</td>
+    <td data-title="Squad">{{stat.squad}}</td>
     <td data-title="Wins">{{stat.wins}}</td>
     <td data-title="Draws">{{stat.draws}}</td>
     <td data-title="Losses">{{stat.losses}}</td>
@@ -44,11 +44,11 @@
 {% for match in matches %}
 <tr>
     <td data-title="Date">{{match.date}}</td>
-    <td data-title="Home">{{match.home}}</td>
+    <td data-title="Home"><img src="/static/images/{{match.home}}.png" class="match-logo" alt="{{match.home}} logo">{{match.home}}</td>
     <td data-title="Home xG">{{match.homeXG}}</td>
     <td data-title="Score">{{match.homeGoals}}-{{match.awayGoals}}</td>
     <td data-title="Away xG">{{match.awayXG}}</td>
-    <td data-title="Away">{{match.away}}</td>
+    <td data-title="Away"><img src="/static/images/{{match.away}}.png" class="match-logo" alt="{{match.away}} logo">{{match.away}}</td>
     <td data-title="Attendance">{{match.attendance}}</td>
     <td data-title="Venue">{{match.venue}}</td>
 </tr>
