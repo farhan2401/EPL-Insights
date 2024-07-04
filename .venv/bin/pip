@@ -1,5 +1,5 @@
 #!/bin/sh
-'''exec' "/Users/evangora/Desktop/Coding Projects/EPL Insights/.venv/bin/python" "$0" "$@"
+'''exec' "/Users/evangora/Desktop/Coding Projects/EPL Insights/EPL-Insights/.venv/bin/python" "$0" "$@"
 ' '''
 # -*- coding: utf-8 -*-
 import re
