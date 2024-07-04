@@ -28,6 +28,45 @@
                 </li>
             <ul>
         </div>
+        <div>
+            <h3 class="subheader">Current Standings</h3>
+        </div>
+        <div class="tblheader">
+            <table cellpadding="0" cellspacing="0" border="0">
+                <thead>
+                    <tr>
+                        <th>Squad</th>
+                        <th>Played</th>
+                        <th>Wins</th>
+                        <th>Draws</th>
+                        <th>Losses</th>
+                        <th>GF</th>
+                        <th>GA</th>
+                        <th>GD</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="stats-content">
+            <table cellpadding="0" cellspacing="0" border="0">
+                <tbody>
+                    {% for stat in standings %}
+                    <tr>
+                        <td data-title="Squad">{{stat.squad}}</td>
+                        <td data-title="Played">{{stat.played}}</td>
+                        <td data-title="Wins">{{stat.wins}}</td>
+                        <td data-title="Draws">{{stat.draws}}</td>
+                        <td data-title="Losses">{{stat.losses}}</td>
+                        <td data-title="GF">{{stat.gf}}</td>
+                        <td data-title="GA">{{stat.ga}}</td>
+                        <td data-title="GD">{{stat.gd}}</td>
+                        <td data-title="Points">{{stat.points}}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
     </body>
 </html>
 {% endblock %}
