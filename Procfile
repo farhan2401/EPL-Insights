@@ -1,1 +1,1 @@
-web: gunicorn EPLInsights:app
+web: gunicorn EPLInsights:app --log-file -
