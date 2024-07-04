@@ -41,3 +41,15 @@ class matchesTbl(models.Model):
     away =  models.CharField(max_length=20, db_column="away")
     attendance = models.IntegerField(db_column="attendance")
     venue = models.CharField(max_length=40, db_column="venue")
+    
+class currTbl(models.Model):
+    position = models.IntegerField(db_column="positon")
+    squad = models.CharField(max_length=20, db_column="squad")
+    played = models.IntegerField(db_column="played")
+    wins = models.IntegerField(db_column="wins")
+    draws = models.IntegerField(db_column="draws")
+    losses = models.IntegerField(db_column="losses")
+    gf = models.IntegerField(db_column="goalsF")
+    ga = models.IntegerField(db_column="goalsA")
+    gd = models.IntegerField(db_column="goalD")
+    points = models.IntegerField(db_column="points")
