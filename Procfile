@@ -1,1 +1,1 @@
-web: gunicorn 'EPLInsights.wsgi'
+web: gunicorn EPLInsights:app
