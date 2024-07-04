@@ -1,1 +1,0 @@
-web: gunicorn EPLInsights.wsgi:app --log-file -
