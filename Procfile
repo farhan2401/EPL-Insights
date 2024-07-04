@@ -1,1 +1,1 @@
-web: gunicorn EPLInsights:app
+web: python manage.py migrate && gunicorn EPLInsights.wsgi
