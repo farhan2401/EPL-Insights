@@ -1,1 +1,1 @@
-web: gunicorn EPLInsights.wsgi --log-file -
+web: gunicorn EPLInsights.wsgi:app --log-file -
