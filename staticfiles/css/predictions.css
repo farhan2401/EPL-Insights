@@ -46,7 +46,7 @@ table {
     background-color: rgba(255,255,255,0.3);
 }
 .week-content {
-    height:300px;
+    height:100%;
     overflow-x: visible;
     overflow-y: auto;
     margin-top: 0px;
